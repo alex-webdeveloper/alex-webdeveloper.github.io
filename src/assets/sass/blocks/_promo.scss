@@ -1,0 +1,39 @@
+.promo {
+    min-height: 100vh;
+    background: url(../img/bg_portfolio.jpg) no-repeat 50%/cover;
+    padding-top: 205px;
+    &__wrapper {
+        padding-left: 100px;
+    }
+
+    &__title {
+        max-width: 535px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+
+    &__btns {
+        margin-top: 25px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        color: $link-color;
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include before_circle;
+    }
+
+    &__link {
+        color: $link-color;
+        font-weight: bold;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

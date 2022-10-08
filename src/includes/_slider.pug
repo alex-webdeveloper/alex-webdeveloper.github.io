@@ -1,0 +1,15 @@
+    <!-- Swiper -->
+-var arrImg = ["template-1", "template-2", "template-3", "template-4", "template-5", "template-6", "template-7", "template-8", "template-9"];
+
+div(class="swiper mySwiper")
+    div(class="swiper-wrapper")
+        each val in arrImg
+            div(class="swiper-slide")
+                a(href="gallery/" + val + ".html" target="_blank")
+                    img(src="assets/img/slider/small-" + val + ".png", alt=val)
+    div(class="swiper-button-next")
+    div(class="swiper-button-prev")
+    div(class="swiper-pagination")
+
+
+

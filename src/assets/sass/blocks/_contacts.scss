@@ -1,0 +1,24 @@
+.contacts {
+    padding: 120px 0 90px 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divider {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        width: 200px;
+    }
+
+    &__title {
+        position: relative;
+        padding-left: 12px;
+        padding-top: 1px;
+        @include before_circle;
+        &:before {
+            left: 37%;
+        }
+    }
+}

@@ -1,0 +1,239 @@
+extends includes/template.pug
+block content
+  main
+    section.slider
+      .container
+        h2.title.title_center Готовые шаблоны
+        include includes/_slider.pug
+    section.about#about
+      .container
+        .about__wrapper
+          .about__photo.animate__animated.animate__fadeInUp.wow
+            .flip-card
+              .flip-card-inner
+                .flip-card-front
+                  img(src="assets/img/my_foto.jpg" alt="my_foto")
+                .flip-card-back
+                  p I am a wed devoloper
+          .about__contant
+            .about__descr.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s")
+              h2.title.title_fs16.about__title Про меня
+              .title.title_fs36.about__subtitle Меня зовут Алексей
+              .divider
+              p.about__text 
+                | Являюсь сертифицированным специалистом в веб разработке. Опыт в создании и продвижении сайтов с 2020 года. Также занимаюсь настройкой контекстной рекламы в Яндекс Директ.
+                | В разработке использую Семантическая верстку сайта и СЕО оптимизация. Все мои разработки это валидный HTML-код, который соответствует  рекомендациям написания кода - спецификации W3C, в чем можно убедится проверив на сайте 
+                a(href="https://validator.w3.org/" target="_blank") VALIDATOR.W3.ORG
+            .about__skills
+              .about__skills-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.2s")
+                div.about__skills-circle
+                  img(src="assets/icons/about_me/web_development.svg" alt="web-dev")
+                div.about__skills-content
+                  h3.title.title_fs14 Web-разработка
+                  p.about__skills-text Создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.
+              .about__skills-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.4s")
+                div.about__skills-circle
+                  img(src="assets/icons/about_me/design.svg" alt="design")
+                div.about__skills-content
+                  h3.title.title_fs14 UI/UX Design
+                  p.about__skills-text Проектирование любых пользовательских интерфейсов в которых удобство использования так же важно как и внешний вид.
+
+    section.skills#skills
+      .container
+        h2.title.title_fs16.title_center Навыки
+        .title.title_fs36.subtitle_center Что я использую в работе
+        .divider
+        .skills__wrapper
+          .skills__item.animate__animated.animate__fadeInUp.wow
+            .skills__item-img
+              img(src="assets/icons/skills/html5.svg" alt="html5")
+            h3.title.title_fs14 HTML5
+            p Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s")
+            .skills__item-img
+              img(src="assets/icons/skills/css3.svg" alt="css3")
+            h3.title.title_fs14 CSS3
+            p Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.2s")
+            .skills__item-img
+              img(src="assets/icons/skills/js.svg" alt="js")
+            h3.title.title_fs14 Java Script
+            p Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.4s")
+            .skills__item-img
+              img(src="assets/icons/skills/jquery.svg" alt="jquery")
+            h3.title.title_fs14 Jquery
+            p Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.6s")
+            .skills__item-img
+              img(src="assets/icons/skills/react.svg" alt="react")
+            h3.title.title_fs14 React
+            p Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.8s")
+            .skills__item-img
+              img(src="assets/icons/skills/node.js.svg" alt="node.js")
+            h3.title.title_fs14 Node.js
+            p Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2s")
+            .skills__item-img
+              img(src="assets/icons/skills/mysql.svg" alt="mysql")
+            h3.title.title_fs14 MySQL
+            p Это свободная реляционная система управления базами данных, которая будет хранить данные вашего сайта или приложения
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2.2s")
+            .skills__item-img
+              img(src="assets/icons/skills/pug.png" alt="pug")
+            h3.title.title_fs14 Pug
+            p Это препроцессор HTML и шаблонизатор, который был написан на JavaScript для Node.js, удобен для дальнейшей поддержки вашего сайта.
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2.4s")
+            .skills__item-img
+              img(src="assets/icons/skills/php.png" alt="php")
+            h3.title.title_fs14 Php
+            p Это язык сценариев общего назначения, предназначенный для веб-разработки. Код PHP обычно обрабатывается на веб-сервере интерпретатором PHP, реализованным в виде модуля, демона или исполняемого файла Common Gateway Interface (CGI).
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2.6s")
+            .skills__item-img
+              img(src="assets/icons/skills/bootstrap.png" alt="bootstrap")
+            h3.title.title_fs14 Bootstrap
+            p Это свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS шаблоны оформления для типографики, веб форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript расширения.
+
+        .skills__ratings
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Создание сайтов
+              .skills__ratings-counter 100%
+            .skills__ratings-line
+              span
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.2s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Создание приложений
+              .skills__ratings-counter 85%
+            .skills__ratings-line
+              span
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.4s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Работа с данными
+              .skills__ratings-counter 90%
+            .skills__ratings-line
+              span
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.6s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Креативность
+              .skills__ratings-counter 90%
+            .skills__ratings-line
+              span
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.8s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Создание дизайна
+              .skills__ratings-counter 80%
+            .skills__ratings-line
+              span
+          .skills__ratings-item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2s")
+            .skills__ratings-content
+              .title.title_fs14.skills__ratings-title Soft skills
+              .skills__ratings-counter 95%
+            .skills__ratings-line
+              span
+
+    section.portfolio#portfolio
+      .container
+        h2.title.title_fs16.title_center Портфолио
+        .title.title_fs36.subtitle_center Мои работы
+        .divider
+        .portfolio__wrapper
+          a.portfolio__item.animate__animated.animate__fadeInUp.wow(href="projects/uber/" target="_blank")
+            h3.portfolio__title Сайт заказ такси  
+            img(src="assets/img/works/uber.jpg" alt="uber")
+          a.portfolio__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s" href="projects/pulse/" target="_blank")
+            h3.portfolio__title Сайт подбор пульсометра
+            img(src="assets/img/works/pulse.jpg" alt="pulse")
+          a.portfolio__item.vertical.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.2s" href="projects/cinema/" target="_blank")
+            h3.portfolio__title Сайт по просмотру фильмов
+            img(src="assets/img/works/inter.jpg" alt="inter")
+          a.portfolio__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.4s" href="projects/kinimonster/" target="_blank")
+            h3.portfolio__title Сайт по просмотру фильмов
+            img(src="assets/img/works/kinimonster.jpg" alt="kinimonster")
+          a.portfolio__item.horizonal.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.6s" href="projects/landing" target="_blank")
+            h3.portfolio__title Landing page
+            img(src="https://placeimg.com/640/480/nature" alt="nature")
+          a.portfolio__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.8s" href="projects/wordpress/" target="_blank")
+            h3.portfolio__title Сайт обучающий вебинар
+            img(src="assets/img/works/woman_bg.png" alt="woman_bg")
+          a.portfolio__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2s" href="https://eco-ferma.pro/" target="_blank")
+            h3.portfolio__title Сайт по продаже мяса
+            img(src="assets/img/works/meat.jpg" alt="meat")
+    section.price#price
+      .container
+        h2.title.title_fs16.title_center Прайс-лист
+        .divider
+        .skills__wrapper
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s")
+            .skills__item-img
+              img(src="assets/icons/price/cross-platform.png" alt="cross-platform")
+            h3.title.title_fs20 LANDING PAGE
+            div 10.000 руб.
+            p Срок изготовления: 3-7 дней
+            ul
+              li Отлично подходит для продажи нескольких товаров или услуг
+              li Привлекательный дизайн с формами захвата
+              li Адаптивная верстка под любые экраны для удобного использования сайта
+              li Простота использования, при этом с полноценным функционалом для обработки заказов
+              li Готовые дизайны на выбор
+              li Фотогалерея и Анимация
+              li Семантическая верстка и СЕО оптимизация
+              li Форма обратной связи
+              li В стоимость входит верстка до 5 блоков включительно
+              li Свыше 5 блоков &mdash; дополнительно 2.000 руб. за каждый блок
+
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.2s")
+            .skills__item-img
+              img(src="assets/icons/price/ux.png" alt="ux")
+            h3.title.title_fs20 Корпоративные Сайты
+            div от 25.000 руб.
+            p Срок изготовления: 7-15 дней
+            ul
+              li Подходит большинству небольших организаций, частным лицам, предпринимателям, которые только начинают новый бизнес
+              li Готовые дизайны на выбор
+              li Фотогалерея и Анимация
+              li Семантическая верстка и СЕО оптимизация
+              li Привлекательный дизайн с формами захвата
+              li Адаптивная верстка под любые экраны для удобного использования сайта
+              li Форма обратной связи
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="2s")
+            .skills__item-img
+              img(src="assets/icons/price/gaming.png" alt="gaming")
+            h3.title.title_fs20 Интернет Магазин
+            div от 70.000 руб.
+            p Срок изготовления: 25-45 дней
+            ul
+              li Интернет магазин включает в себя модули новостного сайта + каталог товаров с корзиной
+              li Готовые дизайны на выбор
+              li Фотогалерея и Анимация
+              li Семантическая верстка и СЕО оптимизация
+              li Админ панель
+              li Привлекательный дизайн с формами захвата
+              li Адаптивная верстка под любые экраны для удобного использования сайта
+              li Форма обратной связи
+            
+          .skills__item.animate__animated.animate__fadeInUp.wow(data-wow-delay="1.5s")
+            .skills__item-img
+              img(src="assets/icons/price/photos.png" alt="gaming")
+            h3.title.title_fs20 Настройка контекстной рекламы в Яндекс Директ
+            div 5.000 руб.
+            ul
+              li Все целевые поисковые запросы
+              li Подключение и настройка целей Яндекс Метрики
+              li Настройка рекламных кампаний с оплатой за звонок или заявку с сайта
+              li Анализ объявлений конкурентов
+
+    section.contacts#contacts.animate__animated.animate__fadeInUp.wow
+      .container
+        .contacts__wrapper
+          h2.title.title_fs16.contacts__title Контакты
+          .title.title_fs36.contacts__subtitle Свяжитесь со мной
+          .divider
+          .title.title_fs14.contacts__text Telegram 
+            a.contacts__link(href="https://t.me/webdevelopert")
+              img(src="assets/icons/social/telegram.png" alt="telegram")
+
+    a(href="#up", class="pageup")
+      img(src="assets/img/up.svg", alt="up")
+  

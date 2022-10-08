@@ -1,0 +1,41 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+
+    &_center {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &_fs14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_fs16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fs20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fs36 {
+        font-size: 36px;
+    }
+    &_fs48 {
+        font-size: 48px;
+    }
+}
+
+.subtitle_center {
+    text-align: center;
+}
