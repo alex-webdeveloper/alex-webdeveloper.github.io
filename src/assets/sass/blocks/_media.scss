@@ -26,6 +26,7 @@
 
     .skills {
         &__ratings {
+            justify-content: space-around;
 
             &-item {
                 &:nth-child(3) {
@@ -127,7 +128,9 @@
         &__wrapper {
             flex-direction: column;
         }
-
+        &__text {
+            padding: 0 10px;
+        }
         &__photo {
             background-color: #f2a443;
             width: 300px;
@@ -148,16 +151,14 @@
     }
 
     .skills {
-        &__wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
 
         &__item {
-            width: 270px;
-
-            &:not(:last-child) {
-                margin-bottom: 20px;
+            flex-grow: 1;
+            margin: 10px;
+        }
+        &__item:nth-child(7) {
+            .skills__item-img {
+                align-self: center;
             }
         }
         &__ratings {
@@ -183,9 +184,6 @@
     .price {
         &__wrapper {
             justify-content: center;
-        }
-        &__item {
-            flex-basis: 380px;
         }
     }
 }
@@ -244,9 +242,7 @@
     }
 
     .skills {
-        &__item {
-            margin: 0;
-        }
+        
         &__ratings {
             margin-top: 90px;
             &-item {

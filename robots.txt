@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://alex-webdeveloper.github.io/sitemap.xml
