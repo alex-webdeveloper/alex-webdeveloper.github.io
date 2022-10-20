@@ -88,7 +88,7 @@ gulp.task('watch', function() {
     gulp.watch("src/assets/js/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/assets/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/assets/icons/**/*").on('all', gulp.parallel('icons'));
-    gulp.watch("src/assets/img/**/*").on('add', gulp.parallel('images'));
+    gulp.watch("src/assets/img/**/*").on('all', gulp.parallel('images'));
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'compilePug', 'images'));
