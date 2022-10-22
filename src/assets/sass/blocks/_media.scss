@@ -1,8 +1,8 @@
-@media (max-width: 1439px) {
-    .sidepanel {
-        display: none;
-    }
-}
+// @media (max-width: 1439px) {
+//     .sidepanel {
+//         display: none;
+//     }
+// }
 
 //  просмотр в браузере на 992
 @media (max-width: 1199px) {
@@ -35,17 +35,13 @@
             }
         }
     }
-}
-
-.portfolio {
-    &__wrapper {
-
-        .horizonal,
-        .vertical {
-        
+    .portfolio {
+        &__item:nth-child(6) {
+            display: none;
         }
     }
 }
+
 
 //  просмотр в браузере на 768
 @media (max-width: 991px) {
