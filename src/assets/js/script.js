@@ -33,20 +33,39 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // smoth scroll
-$(document).ready(function () {
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1600) $(".pageup").fadeIn();
-		else $(".pageup").fadeOut();
-	})
+let btn = document.querySelector('.pageup');
+let up = document.getElementById('up');
+window.addEventListener('scroll', smothScroll);
+window.addEventListener('resize', smothScroll);
 
-	$("a[href='#up']").click(function () {
-		const _href = $(this).attr("href");
-		$("html, body").animate({
-			scrollTop: $(_href).offset().top + "px"
-		});
-		return false;
+function smothScroll() {
+	let height = window.pageYOffset;
+	if (height > 1600) btn.style.display = 'block';
+	else btn.style.display = 'none';
+}
+btn.onclick = (e) => {
+	e.preventDefault();
+	up.scrollIntoView({
+		block: 'center',
+		behavior: 'smooth'
 	})
-});
+};
+
+// $(document).ready(function () {
+// 	$(window).scroll(function () {
+// 		// console.log($(this).scrollTop());
+// 		if ($(this).scrollTop() > 1600) $(".pageup").fadeIn();
+// 		else $(".pageup").fadeOut();
+// 	})
+
+// 	$("a[href='#up']").click(function () {
+// 		const _href = $(this).attr("href");
+// 		$("html, body").animate({
+// 			scrollTop: $(_href).offset().top + "px"
+// 		});
+// 		return false;
+// 	})
+// });
 
 //   Initialize Swiper
 const swiper = new Swiper('.swiper', {
@@ -84,17 +103,17 @@ const swiper = new Swiper('.swiper', {
 	//     el: '.swiper-scrollbar',
 	// },
 	breakpoints: {
-	// 	// when window width is >= 320px
-	// 	320: {
-	// 		slidesPerView: 1,
-	// 		spaceBetween: 20
-	// 	},
-	// 	// when window width is >= 480px
-	// 	576: {
-	// 		slidesPerView: 2,
-	// 		spaceBetween: 30
-	// 	},
-	// 	// when window width is >= 640px
+		// 	// when window width is >= 320px
+		// 	320: {
+		// 		slidesPerView: 1,
+		// 		spaceBetween: 20
+		// 	},
+		// 	// when window width is >= 480px
+		// 	576: {
+		// 		slidesPerView: 2,
+		// 		spaceBetween: 30
+		// 	},
+		// 	// when window width is >= 640px
 		768: {
 			slidesPerView: 2,
 			spaceBetween: 20,
