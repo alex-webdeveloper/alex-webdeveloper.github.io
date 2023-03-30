@@ -159,9 +159,9 @@ window.addEventListener("DOMContentLoaded", function () {
   tabs(".info-header", ".info-header-tab", ".info-tabcontent");
 
   // Timer
-  var deadLine = "2023-12-09";
+  var deadLine = [2023, 11, 9, 0];
   function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
+    var t = Date.parse(new Date(...endtime)) - Date.parse(new Date);
     var seconds = Math.floor(t / 1000 % 60);
     var minutes = Math.floor(t / 1000 / 60 % 60);
     var hours = Math.floor(t / (1000 * 60 * 60));

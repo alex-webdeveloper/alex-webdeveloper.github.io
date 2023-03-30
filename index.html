@@ -111,7 +111,7 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front"><img src="assets/img/my_foto.jpg" alt="my_foto"></div>
                   <div class="flip-card-back">
-                    <p>I am a wed devoloper</p>
+                    <p>I am a web developer</p>
                   </div>
                 </div>
               </div>
@@ -340,7 +340,21 @@
             <h2 class="title title_fs16 contacts__title">Контакты</h2>
             <div class="title title_fs36 contacts__subtitle">Свяжитесь со мной</div>
             <div class="divider"></div>
-            <div class="title title_fs14 contacts__text">Telegram <a class="contacts__link" href="https://t.me/webdevelopert"><img src="assets/icons/social/telegram.png" alt="telegram"></a></div>
+            <div class="contacts__block">
+              <div class="contacts__social">
+                <div class="title title_fs14 contacts__text">Telegram <a class="contacts__link" href="https://t.me/webdevelopert"><img src="assets/icons/social/telegram.png" alt="telegram"></a></div>
+              </div>
+              <div class="title title_fs14 contacts__text">Или оставьте ваши данные и я сам вам напишу</div>
+              <div class="contacts__form">
+                <form id="contact-form">
+                  <input type="hidden" name="contact_number">
+                  <input type="text" name="user_name" placeholder="Your name" required>
+                  <input type="email" name="user_email" placeholder="Your email" required>
+                  <textarea name="message" placeholder="Your message"></textarea>
+                  <button>Send</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section><a class="pageup" href="#up"><img src="assets/img/up.svg" alt="up"></a>
@@ -350,6 +364,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

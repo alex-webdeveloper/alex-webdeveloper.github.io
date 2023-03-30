@@ -119,5 +119,31 @@ const swiper = new Swiper('.swiper', {
 			spaceBetween: 20,
 			// pagination: false,
 		}
-	},
+	}
+});
+
+(function() {
+	emailjs.init("MOtDxdKpHnI--3GJw");
+ })();
+
+ document.getElementById('contact-form').addEventListener('submit', function(event) {
+	event.preventDefault();
+	// generate a five digit number for the contact_number variable
+	console.log(this.contact_number.value);
+	this.contact_number.value = Math.random() * 100000 | 0;
+	console.log(this.contact_number.value);
+
+	function myAlert(string) {
+
+	}
+	// these IDs from the previous steps
+	emailjs.sendForm('service_l90mbbp', 'template_ym21evh', this)
+		.then(function() {
+			console.log('SUCCESS!');
+			document.forms[0].elements.user_name.value = "";
+			document.forms[0].elements.user_email.value = "";
+			document.forms[0].elements.message.value = "";
+		}, function(error) {
+			console.log('FAILED...', error);
+		});
 });

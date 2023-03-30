@@ -14,7 +14,7 @@ block content
                 .flip-card-front
                   img(src="assets/img/my_foto.jpg" alt="my_foto")
                 .flip-card-back
-                  p I am a wed devoloper
+                  p I am a web developer
           .about__contant
             .about__descr.animate__animated.animate__fadeInUp.wow(data-wow-delay="1s")
               h2.title.title_fs16.about__title Про меня
@@ -235,9 +235,19 @@ block content
           h2.title.title_fs16.contacts__title Контакты
           .title.title_fs36.contacts__subtitle Свяжитесь со мной
           .divider
-          .title.title_fs14.contacts__text Telegram 
-            a.contacts__link(href="https://t.me/webdevelopert")
-              img(src="assets/icons/social/telegram.png" alt="telegram")
+          .contacts__block
+            .contacts__social
+              .title.title_fs14.contacts__text Telegram 
+                a.contacts__link(href="https://t.me/webdevelopert")
+                  img(src="assets/icons/social/telegram.png" alt="telegram")
+            .title.title_fs14.contacts__text Или оставьте ваши данные и я сам вам напишу
+            .contacts__form
+              form(id="contact-form")
+                input(type="hidden" name="contact_number")
+                input(type="text" name="user_name" placeholder="Your name" required)
+                input(type="email" name="user_email" placeholder="Your email" required)
+                textarea(name="message" placeholder="Your message")
+                button Send
 
     a(href="#up", class="pageup")
       img(src="assets/img/up.svg", alt="up")
