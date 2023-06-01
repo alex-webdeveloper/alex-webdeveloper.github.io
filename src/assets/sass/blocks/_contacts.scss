@@ -39,6 +39,11 @@
         text-align: center;
     }
     &__form {
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
         input {
             padding: 10px;
             width: 49.3%;
@@ -60,14 +65,9 @@
             border-radius: 10%;
             float: right;
             color: #fff;
-            &::after {
-                content: "";
-                display: block;
-                clear: both;
-            }
             &:hover {
                 background-color: darken($color: #526af5, $amount: 10);
-                color: rgb(0, 255, 0);
+                color: darken($color:  #fff, $amount: 20);
             }
         }
     }
