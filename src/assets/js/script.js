@@ -154,5 +154,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		};
 	});
 	// end form
+	let descr = document.querySelector("meta[name='description']");
+	console.log(descr.content.length)
 
 })

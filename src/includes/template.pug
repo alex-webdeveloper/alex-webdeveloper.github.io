@@ -1,4 +1,6 @@
 
+block config 
+  include config.pug
 
 doctype html
 html(lang="ru" prefix="og: https://ogp.me/ns#")
@@ -8,7 +10,8 @@ html(lang="ru" prefix="og: https://ogp.me/ns#")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Я web-разработчик
     meta(name="title" content="Я web-разработчик")
-    meta(name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне Я web-разработчик Разработка web сайтов")
+    meta(name="keywords" content="разработка и продвижение сайта, заказать лендинг недорого, создание сайта, заказать сайт, разработка сайта, сайт под ключ, админ панель для сайта, сайт с возможностью редактирования, seo, размещением сайта на хостинге")
+    meta(name="description" content=descr)
     include _head.pug
   body
       header#up

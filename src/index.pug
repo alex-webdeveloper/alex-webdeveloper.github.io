@@ -1,6 +1,57 @@
 extends includes/template.pug
 block content
   main
+    section.admin-panel
+      .container
+        .admin-panel__promo.neon
+          h2.title.title_center Акция
+          h3.subtitle_center.title_fs36 Скидка на админ панель 50%!
+          h4.subtitle_center.title_fs16
+            del Было 50тыс. 
+            span Стало 25 тыс.
+            a(href="#contacts")  Заказать
+        .admin-panel__text
+          h2 Админ панель помогает вам с легкостью редактировать сайт
+          p 
+            | Удобная и простая в пользовании админ панель редактирования текста и картинок на вашем сайте.
+            | Админ панель - это панель управления сайтом, с которой может работать любой пользователь, не имеющий навыков программирования.
+            | Для редактирования достаточно просто кликнуть по тексту и изменить его и так же для замены картинки достаточно кликнуть по ней и выбрать другую с вашего устройства.
+          h3 Ознакомится с админ панелью можно 
+            a(href="http://y98918fp.beget.tech/admin/" target="_blank") ЗДЕСЬ
+            |  пароль:
+            span#link-panel  react
+        .admin-panel__block
+          .admin-panel__timer
+            .admin-panel__timer-block.neon
+              h3.subtitle_center.title_fs20 До конца акции осталось:
+              .admin-panel__time#timer
+                div(class="numbers")
+                  p(id="days") 08
+                  p(class="description") Дней
+                div(class="numbers")
+                  p(id="hours") 12
+                  p(class="description") Часов
+                div(class="numbers")
+                  p(id="minutes") 09
+                  p(class="description") Минут
+                div(class="numbers")
+                  p(id="seconds") 15
+                  p(class="description") Секунд  
+          .admin-panel__frame
+            video(id="video" autoplay controls)
+              source(src="assets/img/admin-panel/adminpanel.mp4" type="video/mp4")
+              source(src="assets/img/admin-panel/adminpanel.webm" type="video/webm")
+              source(src="assets/img/admin-panel/adminpanel.ogg" type="video/ogg")
+              | Ваш браузер не поддерживает Video HTML5
+            //- iframe(src="https://www.youtube-nocookie.com/embed/DhYJKNtAkn4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+        .admin-panel__images
+          .admin-panel__img
+            img(src="assets/img/admin-panel/adminpanel.jpg", alt="adminpanel")
+          .admin-panel__img
+            img(src="assets/img/admin-panel/adminpanel1.jpg", alt="adminpanel1")
+            img(src="assets/img/admin-panel/adminpanel2.jpg", alt="adminpanel2")
+        p.admin-panel__text-order Управляй своим сайтом легко!
+          a(href="#contacts")  Заказать
     section.slider
       .container
         h2.title.title_center Готовые шаблоны
@@ -21,7 +72,9 @@ block content
               .title.title_fs36.about__subtitle Меня зовут Алексей
               .divider
               p.about__text 
-                | Являюсь сертифицированным специалистом в веб разработке. Опыт в создании и продвижении сайтов с 2020 года. Также занимаюсь настройкой контекстной рекламы в Яндекс Директ.
+                | Являюсь сертифицированным специалистом в веб разработке. Опыт в создании и продвижении сайтов с 2020 года.
+                | Занимаюсь разработкой и продвижением сайтов, LANDING PAGE, Корпоративные Сайты, Интернет Магазин, одностроничный сайт, админ панель для сайта, все работы провожу под ключ с размещением сайта на хостинге.
+                | Также занимаюсь настройкой контекстной рекламы в Яндекс Директ.
                 | В разработке использую Семантическая верстку сайта и СЕО оптимизация. Все мои разработки это валидный HTML-код, который соответствует  рекомендациям написания кода - спецификации W3C, в чем можно убедится проверив на сайте 
                 a(href="https://validator.w3.org/" target="_blank") VALIDATOR.W3.ORG
             .about__skills

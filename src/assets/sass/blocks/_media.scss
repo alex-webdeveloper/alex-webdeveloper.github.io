@@ -93,6 +93,18 @@
 
 //  просмотр в браузере на 576
 @media (max-width: 767px) {
+    .admin-panel{
+        padding-top: 70px;
+        &__timer {
+            margin-right: 0;
+            height: auto;
+            padding-top: 0;
+            margin-bottom: 50px;
+        }
+        &__frame {
+            height: auto;
+        }
+    }
     .slider {
         padding-top: 70px;
     }
